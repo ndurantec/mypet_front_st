@@ -14,7 +14,7 @@
         </div>
         
         <form action="" class="row g-4 p-3">
-            <div class="form-group">
+            <div class="form-group">                                     
                 <label for="imagem"><i class="fas fa-camera"></i> Imagem do Pet:</label>
                 <input type="file" name="imagem" id="imagem" placeholder="Selecione a foto do seu pet">
             </div>
@@ -48,11 +48,11 @@
                 <input type="text" name="outro_tipo" id="outro_tipo" placeholder="Especifique se necessário">
             </div>
 
-            <button type="button"><i class="fas fa-paper-plane"></i> Enviar Cadastro</button>
+            <button type="button" onclick="enviarCadastro()" ><i class="fas fa-paper-plane" ></i> Enviar Cadastro</button>
         </form>
     </div>
-</body>
-<style>
+
+    <style>
         * {
             margin: 0;
             padding: 0;
@@ -225,4 +225,7 @@
             }
         }
     </style>
+
+    <script src="/javascript/pet.js"></script>
+</body>
 </html>
