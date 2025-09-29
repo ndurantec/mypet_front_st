@@ -1,7 +1,12 @@
 function comprar() {
-    window.location.href = 'detalheProduto.html'
+    window.location.href = 'detalheProduto.html';
 }
 
 function voltar() {
-    window.location.href = 'inicio.html'
+    window.location.href = 'inicio.html';
+}
+
+function comprarDois() {
+    alert("Você precisa estar logado");
+     window.location.href = 'form.html';
 }
