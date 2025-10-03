@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Endereços</title>
+    <link rel="stylesheet" href="css/cadEndereco.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Cadastro de Endereços</h1>
+            <div class="address-counter">Endereços cadastrados: <span id="address-count">1</span></div>
+        </div>
+        
+        <div class="form-container">
+            <form id="address-form">
+                <div class="address-group" id="address-template">
+                    <div class="address-group-header">
+                        <div class="address-title">Endereço Principal</div>
+                        <button type="button" class="remove-address" style="display: none;">Remover</button>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label" for="rua">Rua</label>
+                        <input type="text" class="form-control" id="rua" placeholder="Digite o nome da rua" name="rua" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label" for="numero">Número</label>
+                        <input type="text" class="form-control" id="numero" placeholder="Digite o número" name="numero" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label" for="bairro">Bairro</label>
+                        <input type="text" class="form-control" id="bairro" placeholder="Digite o bairro" name="bairro" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label" for="cep">CEP</label>
+                        <input type="text" class="form-control" id="cep" placeholder="Digite o CEP" name="cep" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label" for="complemento">Complemento</label>
+                        <input type="text" class="form-control" id="complemento" placeholder="Digite o complemento (opcional)" name="complemento">
+                    </div>
+                </div>
+                
+                <div id="additional-addresses"></div>
+                
+                <button type="button" class="btn-add-address" id="add-address">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 5V19M5 12H19" stroke="#4F0C5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Adicionar outro endereço
+                </button>
+                
+                <button type="submit" class="btn-submit">Cadastrar Endereços</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="javascript/cadEndereco.js"></script>
+</body>
+</html>

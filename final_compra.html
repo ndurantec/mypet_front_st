@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar Compra</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/final_compra.css">
+</head>
+<body>
+    <div class="container">
+        <h4><strong>Finalizar Compra</strong></h4>
+        <div class="form-section">
+            <h3 class="section-title">Endereço de Entrega</h3>
+            
+            <div class="form-group">
+                <label for="Rua"><strong>Rua</strong></label>
+                <input type="text" id="Rua" class="form-control form-control-sm" placeholder="Digite a rua">
+            </div>
+            
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="Número"><strong>Número</strong></label>
+                        <input type="text" id="Número" class="form-control form-control-sm" placeholder="Número">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label for="Bairro"><strong>Bairro</strong></label>
+                        <input type="text" id="Bairro" class="form-control form-control-sm" placeholder="Digite o bairro">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="CEP"><strong>CEP</strong></label>
+                        <input type="text" id="CEP" class="form-control form-control-sm" placeholder="00000-000">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label for="Complemento"><strong>Complemento</strong></label>
+                        <input type="text" id="Complemento" class="form-control form-control-sm" placeholder="Apartamento, bloco, casa...">
+                    </div>
+                </div>
+            </div>
+            
+            <h3 class="section-title">Pagamento</h3>
+            
+            <div class="payment-section">
+                <div class="form-group">
+                    <label for="Pagamento"><strong>Forma de Pagamento</strong></label>
+                    <select id="Pagamento" class="form-control form-control-sm">
+                        <option value="">Cartão de Crédito</option>
+                        <option value="">Cartão de Débito</option>
+                        <option value="">Pix</option>
+                        <option value="">Boleto</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="Número do Cartão"><strong>Número do Cartão</strong></label>
+                    <input type="text" id="Número do Cartão" class="form-control form-control-sm" placeholder="0000 0000 0000 0000">
+                </div>
+                
+                <div class="card-details">
+                    <div class="form-group">
+                        <label for="Validade"><strong>Validade</strong></label>
+                        <input type="text" id="Validade" class="form-control form-control-sm" placeholder="MM/AA">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="CVV"><strong>CVV</strong></label>
+                        <input type="text" id="CVV" class="form-control form-control-sm" placeholder="123">
+                    </div>
+                </div>
+            </div>
+            
+            <button class="btn-submit">Finalizar Pedido</button>
+        </div>
+        
+        <div class="footer">
+            <p>© 2023 Sua Loja. Todos os direitos reservados.</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

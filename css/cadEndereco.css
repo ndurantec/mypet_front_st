@@ -1,0 +1,198 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 500px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+        }
+        
+        .header {
+            background-color: #4F0C5C;
+            color: white;
+            text-align: center;
+            padding: 30px 30px 20px;
+        }
+        
+        .header h1 {
+            font-size: 26px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .address-counter {
+            margin-top: 10px;
+            font-size: 14px;
+            opacity: 0.9;
+        }
+        
+        .form-container {
+            padding: 30px 40px 40px;
+        }
+        
+        .address-group {
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #f9fafb;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        
+        .address-group:not(:first-child) {
+            border: 2px dashed #DE86F0;
+        }
+        
+        .address-group-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        .address-title {
+            color: #4F0C5C;
+            font-weight: 600;
+            font-size: 16px;
+        }
+        
+        .remove-address {
+            background: none;
+            border: none;
+            color: #e53e3e;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: all 0.2s ease;
+        }
+        
+        .remove-address:hover {
+            background-color: #fed7d7;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-label {
+            display: block;
+            color: #4F0C5C;
+            font-weight: 600;
+            margin-bottom: 8px;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 14px 16px;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            background-color: white;
+        }
+        
+        .form-control:focus {
+            outline: none;
+            border-color: #DE86F0;
+            box-shadow: 0 0 0 3px rgba(222, 134, 240, 0.2);
+            background-color: white;
+        }
+        
+        .form-control::placeholder {
+            color: #a0aec0;
+        }
+        
+        .btn-submit {
+            width: 100%;
+            padding: 16px;
+            background-color: #4F0C5C;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 10px;
+            text-transform: uppercase;
+        }
+        
+        .btn-submit:hover {
+            background-color: #912FA5;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(145, 47, 165, 0.3);
+        }
+        
+        .btn-submit:active {
+            transform: translateY(0);
+        }
+        
+        .btn-add-address {
+            width: 100%;
+            padding: 14px;
+            background-color: transparent;
+            color: #4F0C5C;
+            border: 2px dashed #4F0C5C;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+        
+        .btn-add-address:hover {
+            background-color: rgba(79, 12, 92, 0.05);
+            border-style: solid;
+        }
+        
+        @media (max-width: 480px) {
+            .form-container {
+                padding: 20px 25px 30px;
+            }
+            
+            .header h1 {
+                padding: 25px 20px 15px;
+                font-size: 22px;
+            }
+            
+            .form-control {
+                padding: 12px 14px;
+            }
+            
+            .btn-submit, .btn-add-address {
+                padding: 14px;
+            }
+            
+            .address-group {
+                padding: 15px;
+            }
+        }
